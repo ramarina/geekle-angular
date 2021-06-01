@@ -20,6 +20,7 @@
     "@angular/router": "~12.0.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
+    "vue": "^2.6.12",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {

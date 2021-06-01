@@ -33,7 +33,12 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/wc-component/my-component.js",
+              "node_modules/vue/dist/vue.min.js",
+              "src/assets/vue-component/hero-list.min.js",
+              "src/assets/react-component/direflowBundle.js"
+            ]
           },
           "configurations": {
             "production": {
