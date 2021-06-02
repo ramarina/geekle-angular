@@ -1,3 +1,11 @@
 .component-holder {
   margin-top: 100px;
+  display:flex;
+  padding:5px; /* this */
+  flex-direction:column;
+}
+
+.component-holder > hero-button {
+  text-align:left;
+  margin-top:20px;
 }
