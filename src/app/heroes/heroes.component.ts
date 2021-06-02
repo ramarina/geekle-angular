@@ -1,4 +1,4 @@
-import {Component, ElementRef} from '@angular/core';
+import {Component, ElementRef, Input} from '@angular/core';
 
 @Component({
   selector: 'heroes',
@@ -6,14 +6,17 @@ import {Component, ElementRef} from '@angular/core';
   styleUrls: ['./heroes.component.scss']
 })
 export class HeroesComponent {
-  title = 'geekle-angular';
-  superheroes: any[] = [
-    { name: 'Elactigirl', code: 'EL' },
-    { name: 'Batman', code: 'BA' },
-    { name: 'Magneta', code: 'MA' },
-    { name: 'Daredevil', code: 'DA' },
-    { name: 'Wonder Woman', code: 'WW' }
+
+  @Input() superheroes = [
+    { name: 'Angular Elactigirl', code: 'EL' },
+    { name: 'Angular Batman', code: 'BA' },
+    { name: 'Angular Magneta', code: 'MA' },
+    { name: 'Angular Daredevil', code: 'DA' },
+    { name: 'Angular Wonder Woman', code: 'WW' }
   ];
+
+  @Input() buttonLabel = 'Button from React'
+
   constructor(private elementRef:ElementRef) {}
 
   ngAfterViewInit() {
