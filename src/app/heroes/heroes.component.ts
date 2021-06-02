@@ -15,13 +15,13 @@ export class HeroesComponent {
     { name: 'Angular Wonder Woman', code: 'WW' }
   ];
 
-  @Input() buttonLabel = 'Button from React'
+  @Input() buttonLabel = 'Super Button from React'
 
   constructor(private elementRef:ElementRef) {}
 
   ngAfterViewInit() {
     this.elementRef.nativeElement.querySelector('hero-button')
-      .addEventListener('click', this.onClick.bind(this));
+      .addEventListener('my-event', this.onClick.bind(this));
   }
 
   onClick(event: any) {
